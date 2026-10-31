@@ -96,8 +96,8 @@
         <div class="portrait-card">
           <div class="portrait-image-wrap">
             <img 
-              src="https://images.unsplash.com/photo-1702943547525-3bd48e89588e?auto=format&fit=crop&w=900&q=85" 
-              alt="Shreya - Modern Indian Digital Persona" 
+              src="assets/shreya_hero.jpg" 
+              alt="Shreya - Modern Digital Persona" 
               class="portrait-img"
               id="heroPortrait"
             >
@@ -105,7 +105,7 @@
               <span class="badge-text">IDENTITY #01</span>
             </div>
             <div class="portrait-caption">
-              <h5>Shreya • DLF Phase 5, Gurgaon</h5>
+              <h5>Shreya • Virtual Influencer</h5>
               <p>Contemporary Indian elegance & tech lifestyle</p>
             </div>
           </div>
@@ -167,20 +167,59 @@
       <!-- Gallery Grid -->
       <div class="gallery-grid" id="galleryGrid">
         
-        <!-- Photo 1: Contemporary Indian -->
-        <div class="gallery-card" data-category="contemporary">
+        <!-- Photo 1: Studio Focus -->
+        <div class="gallery-card" data-category="studio">
           <div class="gallery-media">
-            <img src="https://images.unsplash.com/photo-1753981031189-27bb7bd1c079?auto=format&fit=crop&w=800&q=80" alt="Shreya in contemporary green ethnic wear" loading="lazy">
+            <img src="assets/shreya_hero.jpg" alt="Shreya portrait styling" loading="lazy">
             <div class="gallery-hover-overlay">
-              <span class="hover-tag">Contemporary Indian</span>
-              <h4>Festive Minimalist Drape</h4>
-              <p>DLF Phase 5 evening golden hour</p>
+              <span class="hover-tag">Studio & Editorial</span>
+              <h4>Chic Minimalist Framing</h4>
+              <p>Clean editorial studio aesthetic</p>
               <button class="btn-inspect" onclick="inspectPhoto(this)"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Look</button>
             </div>
           </div>
         </div>
 
-        <!-- Photo 2: Traditional Elegance -->
+        <!-- Photo 2: Contemporary -->
+        <div class="gallery-card" data-category="contemporary">
+          <div class="gallery-media">
+            <img src="assets/shreya_1.jpg" alt="Shreya contemporary look" loading="lazy">
+            <div class="gallery-hover-overlay">
+              <span class="hover-tag">Contemporary Indian</span>
+              <h4>Effortless Daily Expression</h4>
+              <p>Natural warm ambient lighting</p>
+              <button class="btn-inspect" onclick="inspectPhoto(this)"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Look</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo 3: Tech Lifestyle -->
+        <div class="gallery-card" data-category="urban">
+          <div class="gallery-media">
+            <img src="assets/shreya_2.jpg" alt="Shreya tech lifestyle portrait" loading="lazy">
+            <div class="gallery-hover-overlay">
+              <span class="hover-tag">Urban & Street</span>
+              <h4>Modern Metro Lifestyle</h4>
+              <p>Metropolitan workspace & casual chic</p>
+              <button class="btn-inspect" onclick="inspectPhoto(this)"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Look</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo 4: Studio Focus -->
+        <div class="gallery-card" data-category="studio">
+          <div class="gallery-media">
+            <img src="assets/shreya_3.jpg" alt="Shreya editorial portrait" loading="lazy">
+            <div class="gallery-hover-overlay">
+              <span class="hover-tag">Studio & Editorial</span>
+              <h4>High-Fashion Campaign Focus</h4>
+              <p>Sophisticated minimalist composition</p>
+              <button class="btn-inspect" onclick="inspectPhoto(this)"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Look</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo 5: Heritage Fusion -->
         <div class="gallery-card" data-category="contemporary">
           <div class="gallery-media">
             <img src="https://images.unsplash.com/photo-1787022087854-177d08846b9e?auto=format&fit=crop&w=800&q=80" alt="Shreya traditional jewelry & saree" loading="lazy">
@@ -188,45 +227,6 @@
               <span class="hover-tag">Heritage Fusion</span>
               <h4>Silver Jhumka & Classic Saree</h4>
               <p>Handcrafted textiles and statement jewelry</p>
-              <button class="btn-inspect" onclick="inspectPhoto(this)"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Look</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Photo 3: Urban Portrait -->
-        <div class="gallery-card" data-category="urban">
-          <div class="gallery-media">
-            <img src="https://images.unsplash.com/photo-1743090834072-4f70339bc917?auto=format&fit=crop&w=800&q=80" alt="Shreya candid street portrait" loading="lazy">
-            <div class="gallery-hover-overlay">
-              <span class="hover-tag">Urban Street</span>
-              <h4>Delhi Cafe Terrace</h4>
-              <p>Candid afternoon coffee conversation</p>
-              <button class="btn-inspect" onclick="inspectPhoto(this)"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Look</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Photo 4: Studio Silk Drape -->
-        <div class="gallery-card" data-category="studio">
-          <div class="gallery-media">
-            <img src="https://images.unsplash.com/photo-1702943547525-3bd48e89588e?auto=format&fit=crop&w=800&q=80" alt="Shreya studio editorial" loading="lazy">
-            <div class="gallery-hover-overlay">
-              <span class="hover-tag">Editorial Studio</span>
-              <h4>Silk Saree & Subtle Gold Accents</h4>
-              <p>High-fashion campaign framing</p>
-              <button class="btn-inspect" onclick="inspectPhoto(this)"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Look</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Photo 5: Outdoor Cultural -->
-        <div class="gallery-card" data-category="contemporary">
-          <div class="gallery-media">
-            <img src="https://images.unsplash.com/photo-1769275061786-c33ab1a284c8?auto=format&fit=crop&w=800&q=80" alt="Shreya festival evening" loading="lazy">
-            <div class="gallery-hover-overlay">
-              <span class="hover-tag">Festival Lighting</span>
-              <h4>Warm Amber Ambient Glow</h4>
-              <p>Traditional festive campaign series</p>
               <button class="btn-inspect" onclick="inspectPhoto(this)"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Look</button>
             </div>
           </div>
@@ -351,10 +351,10 @@
           </a>
 
           <div class="contact-info-item">
-            <div class="icon-wrap"><i class="fa-solid fa-location-dot"></i></div>
+            <div class="icon-wrap"><i class="fa-solid fa-earth-asia"></i></div>
             <div>
-              <span class="item-label">Studio & HQ</span>
-              <span class="item-val">Cyber City, DLF Phase 2, Gurgaon, India</span>
+              <span class="item-label">Coverage & Market</span>
+              <span class="item-val">Pan-India (Metro & Tier-1 Hubs)</span>
             </div>
           </div>
 
