@@ -3,99 +3,180 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tara Roy — India's First Urban Tech & Lifestyle Virtual Persona</title>
-  <meta name="description" content="Tara Roy is India's leading digital human & virtual creator. Based in Cyber City, Gurgaon. Exploring urban tech, aesthetics, fashion, and lifestyle.">
+  <title>Shreya Roy — India's Premier Virtual Tech & Lifestyle Creator</title>
+  <meta name="description" content="Shreya Roy is India's leading AI-native digital human & virtual creator. Based in Cyber City, Gurgaon. Exploring urban tech, product design, aesthetics, and modern Indian lifestyle.">
   
-  <!-- Google Fonts -->
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220%22%3E<text y=%2226%22 font-size=%2224%22>✨</text></svg>">
+
+  <!-- Google Fonts: Inter + Plus Jakarta Sans + Outfit -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
   
   <!-- Font Awesome Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+  <!-- Ambient Light Effects -->
+  <div class="ambient-glow glow-top-left"></div>
+  <div class="ambient-glow glow-top-right"></div>
+  <div class="ambient-glow glow-center"></div>
+
+  <!-- Top Announcement Bar -->
+  <aside class="top-banner">
+    <div class="container banner-inner">
+      <span class="pulse-chip"></span>
+      <p>Now accepting Q4 Brand Partnerships & Synthetic UGC Campaigns across India & Global</p>
+      <a href="#collaborate" class="banner-link">View Media Kit <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </aside>
+
   <!-- Navigation -->
-  <header class="navbar">
+  <header class="navbar" id="navbar">
     <div class="nav-container">
       <a href="#" class="brand-logo">
-        <span class="logo-dot"></span>
-        <span class="logo-text">TARA<span class="highlight">.AI</span></span>
+        <span class="logo-symbol">
+          <i class="fa-solid fa-sparkles"></i>
+        </span>
+        <span class="logo-name">SHREYA<span class="accent-text">.AI</span></span>
       </a>
-      <nav class="nav-links">
-        <a href="#about">About</a>
-        <a href="#portfolio">Lookbook</a>
-        <a href="#brand-collabs">Collaborations</a>
-        <a href="#press">Media Kit</a>
-        <a href="#contact" class="btn-nav">Partner With Tara</a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#about" class="nav-item">About Shreya</a>
+        <a href="#lookbook" class="nav-item">Lookbook</a>
+        <a href="#collaborate" class="nav-item">Partnership Tiers</a>
+        <a href="#case-studies" class="nav-item">Why Virtual</a>
+        <a href="#faq" class="nav-item">FAQ</a>
+        <a href="#contact" class="btn-nav">
+          <i class="fa-regular fa-paper-plane"></i>
+          <span>Partner With Us</span>
+        </a>
       </nav>
-      <button class="mobile-menu-toggle" id="menuToggle" aria-label="Toggle Menu">
-        <i class="fa-solid fa-bars"></i>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation">
+        <i class="fa-solid fa-bars-staggered"></i>
       </button>
     </div>
   </header>
 
   <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-bg-glow"></div>
-    <div class="container hero-grid">
-      <div class="hero-content">
-        <div class="badge-tag">
-          <span class="pulsing-badge"></span>
-          <span>Next-Gen Virtual Creator • Gurgaon, India</span>
+  <section class="hero" id="home">
+    <div class="container hero-layout">
+      
+      <!-- Hero Copy -->
+      <div class="hero-left">
+        <div class="chip-label">
+          <i class="fa-solid fa-circle-check"></i>
+          <span>Official Digital Human IP • Gurgaon, India</span>
         </div>
-        <h1 class="hero-title">
-          Where Code Meets <br><span class="gradient-text">Urban Culture.</span>
+
+        <h1 class="hero-heading">
+          India's Next-Gen <br>
+          <span class="gradient-headline">Virtual Tech & Lifestyle</span> <br>
+          Creator.
         </h1>
-        <p class="hero-subtitle">
-          I'm <strong>Tara Roy</strong>, a 24-year-old digital human blending tech product design, streetwear aesthetics, and Delhi-NCR coffee culture. Redefining what it means to be an influencer in the AI age.
+
+        <p class="hero-desc">
+          Meet <strong>Shreya Roy</strong> (24), a culturally authentic digital persona bridging software product thinking, minimalist streetwear, and Delhi-NCR cafe culture. Delivering <strong>100% brand-safe</strong>, high-converting synthetic media for forward-thinking brands.
         </p>
-        <div class="hero-actions">
-          <a href="#brand-collabs" class="btn-primary">
-            <span>Explore Collabs</span>
+
+        <div class="hero-cta-group">
+          <a href="#collaborate" class="btn-primary">
+            <span>Explore Brand Collabs</span>
             <i class="fa-solid fa-arrow-right"></i>
           </a>
-          <a href="#portfolio" class="btn-secondary">
-            <i class="fa-brands fa-instagram"></i>
-            <span>View Lookbook</span>
+          <a href="#lookbook" class="btn-secondary">
+            <i class="fa-solid fa-camera-retro"></i>
+            <span>Browse Lookbook</span>
           </a>
         </div>
-        <div class="hero-stats">
-          <div class="stat-card">
-            <h3>100%</h3>
-            <p>Brand Safe & Scalable</p>
+
+        <!-- Trust Badges -->
+        <div class="hero-meta-strip">
+          <div class="meta-pillar">
+            <div class="pillar-icon"><i class="fa-solid fa-shield-halved"></i></div>
+            <div class="pillar-text">
+              <strong>Zero PR Risk</strong>
+              <span>Always brand-aligned</span>
+            </div>
           </div>
-          <div class="stat-card">
-            <h3>4K</h3>
-            <p>Photorealistic Visuals</p>
+          <div class="meta-pillar">
+            <div class="pillar-icon"><i class="fa-solid fa-bolt-lightning"></i></div>
+            <div class="pillar-text">
+              <strong>48-Hr Delivery</strong>
+              <span>Rapid content turnaround</span>
+            </div>
           </div>
-          <div class="stat-card">
-            <h3>DLF 5</h3>
-            <p>Cyber City, Gurgaon HQ</p>
+          <div class="meta-pillar">
+            <div class="pillar-icon"><i class="fa-solid fa-chart-line"></i></div>
+            <div class="pillar-text">
+              <strong>3x Engagement</strong>
+              <span>Novelty + curated design</span>
+            </div>
           </div>
         </div>
       </div>
-      
-      <div class="hero-visual">
-        <div class="avatar-card-wrapper">
-          <div class="avatar-frame">
-            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80" alt="Tara Roy - Virtual Persona" class="avatar-img" id="heroAvatar">
-            <div class="avatar-badge">
-              <i class="fa-solid fa-microchip"></i>
-              <span>Digital Human v1.0</span>
+
+      <!-- Hero Visual Canvas -->
+      <div class="hero-right">
+        <div class="interactive-avatar-card">
+          <div class="card-glass-frame">
+            <div class="avatar-header">
+              <span class="live-pill"><span class="dot"></span> ACTIVE IDENTITY</span>
+              <span class="avatar-tag">v2.4 Photoreal</span>
             </div>
-            <div class="avatar-meta-float">
-              <div class="meta-icon"><i class="fa-solid fa-location-dot"></i></div>
-              <div class="meta-info">
-                <h4>Cyber Hub, Gurgaon</h4>
-                <p>Currently sipping an iced cortado ☕</p>
+            
+            <div class="avatar-image-container">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=900&q=85" alt="Shreya Roy - Digital Human" class="avatar-portrait" id="mainAvatarImage">
+              <div class="image-overlay-vignette"></div>
+            </div>
+
+            <div class="avatar-status-tray">
+              <div class="status-pin">
+                <i class="fa-solid fa-location-dot"></i>
+                <div>
+                  <h4>Cyber Hub, DLF Phase 2, Gurgaon</h4>
+                  <p>Catching up on product specs over cold brew</p>
+                </div>
+              </div>
+              <div class="status-tags">
+                <span class="micro-badge">#TechProduct</span>
+                <span class="micro-badge">#SneakerHead</span>
+                <span class="micro-badge">#NCRLiving</span>
               </div>
             </div>
           </div>
         </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Interactive Stats Counter Bar -->
+  <section class="stats-bar">
+    <div class="container stats-flex">
+      <div class="stat-item">
+        <h3 class="stat-number">100%</h3>
+        <p class="stat-label">Brand Compliance</p>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <h3 class="stat-number">4K</h3>
+        <p class="stat-label">Ultra HD Synthetic Media</p>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <h3 class="stat-number">&lt; 48h</h3>
+        <p class="stat-label">Turnaround Time</p>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <h3 class="stat-number">₹0</h3>
+        <p class="stat-label">Physical Studio Overhead</p>
       </div>
     </div>
   </section>
@@ -103,250 +184,506 @@
   <!-- About / Identity Section -->
   <section class="section about-section" id="about">
     <div class="container">
-      <div class="section-header text-center">
-        <span class="section-tag">Identity</span>
-        <h2>The Story Behind the Screen</h2>
-        <p>Curated aesthetic. Hyper-realistic presence. Powered by cutting-edge neural rendering.</p>
+      <div class="section-badge-center">
+        <span class="section-tag"><i class="fa-solid fa-fingerprint"></i> Persona DNA</span>
+        <h2 class="section-title">Designed for the Modern Indian Metro</h2>
+        <p class="section-subtitle">Shreya Roy is not an artificial novelty; she is a relatable, aspirational digital resident of Gurgaon's vibrant tech corridor.</p>
       </div>
 
-      <div class="about-grid">
-        <div class="about-card">
-          <div class="card-icon"><i class="fa-solid fa-laptop-code"></i></div>
-          <h3>Tech Product Mindset</h3>
-          <p>Tara isn't just about fashion. She reviews minimalist workspace setups, Apple/Nothing ecosystem gadgets, mechanical keyboards, and productivity workflows.</p>
+      <div class="grid-three">
+        <div class="feature-card">
+          <div class="icon-bubble purple-bubble">
+            <i class="fa-solid fa-code-merge"></i>
+          </div>
+          <h3>Product Manager Mindset</h3>
+          <p>Shreya speaks the language of modern tech: desk ergonomics, SaaS tools, mechanical keyboards, Apple/Nothing ecosystems, and deep-work productivity hacks.</p>
+          <ul class="feature-bullets">
+            <li><i class="fa-solid fa-check"></i> Minimalist tech reviews</li>
+            <li><i class="fa-solid fa-check"></i> Remote work lifestyle</li>
+          </ul>
         </div>
-        <div class="about-card">
-          <div class="card-icon"><i class="fa-solid fa-vest-patches"></i></div>
+
+        <div class="feature-card featured-feature-card">
+          <div class="card-ribbon">Core Niche</div>
+          <div class="icon-bubble cyan-bubble">
+            <i class="fa-solid fa-vest"></i>
+          </div>
           <h3>Streetwear & Aesthetic</h3>
-          <p>Oversized blazers, sneaker drops, clean palettes, and effortless Indian urban style designed for the young metro workforce.</p>
+          <p>Oversized structured blazers, neutral tones, monochrome silhouettes, and sneaker styling tailored for young professionals moving between co-working spaces and high-street lounges.</p>
+          <ul class="feature-bullets">
+            <li><i class="fa-solid fa-check"></i> Urban Indian drip</li>
+            <li><i class="fa-solid fa-check"></i> Sustainable style curations</li>
+          </ul>
         </div>
-        <div class="about-card">
-          <div class="card-icon"><i class="fa-solid fa-shield-halved"></i></div>
-          <h3>Zero PR Risk for Brands</h3>
-          <p>100% schedule reliability, customized brand integration in any location worldwide, and strictly aligned with brand guidelines.</p>
+
+        <div class="feature-card">
+          <div class="icon-bubble pink-bubble">
+            <i class="fa-solid fa-mug-hot"></i>
+          </div>
+          <h3>Cafe & City Life</h3>
+          <p>Authentic local flavor: Third Wave Coffee at Horizon Centre, evening strolls along Cyber Hub, weekend road trips across Delhi-NCR, and modern urban lifestyle commentary.</p>
+          <ul class="feature-bullets">
+            <li><i class="fa-solid fa-check"></i> Hyper-local context</li>
+            <li><i class="fa-solid fa-check"></i> High community relatability</li>
+          </ul>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Portfolio / Lookbook -->
-  <section class="section portfolio-section" id="portfolio">
+  <!-- Interactive Lookbook Gallery with Filter Tabs -->
+  <section class="section lookbook-section" id="lookbook">
     <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Lookbook & Moments</span>
-        <h2>Life Through the Lens</h2>
-        <p>A glimpse into Tara's world across Gurgaon, Delhi, and beyond.</p>
+      <div class="section-header-row">
+        <div>
+          <span class="section-tag"><i class="fa-solid fa-images"></i> Visual Lookbook</span>
+          <h2 class="section-title">Everyday Moments, Hyper-Real Precision</h2>
+        </div>
+        <!-- Filter Tabs -->
+        <div class="filter-pills" id="lookbookFilters">
+          <button class="filter-btn active" data-filter="all">All Styles</button>
+          <button class="filter-btn" data-filter="tech">Tech & Workspace</button>
+          <button class="filter-btn" data-filter="fashion">Streetwear</button>
+          <button class="filter-btn" data-filter="lifestyle">Cafe & City</button>
+        </div>
       </div>
 
-      <div class="gallery-grid">
-        <div class="gallery-item">
-          <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=700&q=80" alt="Tara cafe aesthetic">
-          <div class="gallery-overlay">
-            <span class="tag">Cafe Culture</span>
-            <h4>Third Wave Coffee, DLF Phase 5</h4>
-            <p>Work sprints & cold brews.</p>
+      <div class="lookbook-masonry" id="galleryContainer">
+        <!-- Item 1 -->
+        <div class="gallery-card" data-category="lifestyle">
+          <div class="card-media">
+            <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=800&q=80" alt="Shreya at Cafe" loading="lazy">
+            <div class="overlay-glass">
+              <span class="cat-badge">Cafe Culture</span>
+              <h4>Third Wave Coffee • DLF Phase 5</h4>
+              <p>Work sprints & cold brews.</p>
+              <button class="btn-inspect" onclick="openPhotoModal(this)"><i class="fa-solid fa-expand"></i> Inspect Look</button>
+            </div>
           </div>
         </div>
-        <div class="gallery-item">
-          <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=700&q=80" alt="Tara tech desk">
-          <div class="gallery-overlay">
-            <span class="tag">Tech Desk</span>
-            <h4>Minimalist Desk Tour 2026</h4>
-            <p>Curated tools for deep work.</p>
+
+        <!-- Item 2 -->
+        <div class="gallery-card" data-category="tech">
+          <div class="card-media">
+            <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=800&q=80" alt="Shreya Tech Desk" loading="lazy">
+            <div class="overlay-glass">
+              <span class="cat-badge">Desk Setup</span>
+              <h4>Cyber City Home Studio</h4>
+              <p>Keychron mechanical keyboard & wireless workflow.</p>
+              <button class="btn-inspect" onclick="openPhotoModal(this)"><i class="fa-solid fa-expand"></i> Inspect Look</button>
+            </div>
           </div>
         </div>
-        <div class="gallery-item">
-          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=700&q=80" alt="Tara evening streetwear">
-          <div class="gallery-overlay">
-            <span class="tag">Streetwear</span>
-            <h4>Cyber City Golden Hour</h4>
-            <p>Monochrome silhouettes.</p>
+
+        <!-- Item 3 -->
+        <div class="gallery-card" data-category="fashion">
+          <div class="card-media">
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=800&q=80" alt="Shreya Streetwear" loading="lazy">
+            <div class="overlay-glass">
+              <span class="cat-badge">Streetwear</span>
+              <h4>Cyber Hub Golden Hour</h4>
+              <p>Charcoal tailored oversized blazer with clean accessories.</p>
+              <button class="btn-inspect" onclick="openPhotoModal(this)"><i class="fa-solid fa-expand"></i> Inspect Look</button>
+            </div>
           </div>
         </div>
-        <div class="gallery-item">
-          <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=700&q=80" alt="Tara aesthetic portrait">
-          <div class="gallery-overlay">
-            <span class="tag">Lifestyle</span>
-            <h4>Studio Experiment v2</h4>
-            <p>Generative fashion concept.</p>
+
+        <!-- Item 4 -->
+        <div class="gallery-card" data-category="lifestyle">
+          <div class="card-media">
+            <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=800&q=80" alt="Shreya Portrait" loading="lazy">
+            <div class="overlay-glass">
+              <span class="cat-badge">Aesthetic Studio</span>
+              <h4>Lighting Experimentation v2.1</h4>
+              <p>Natural bokeh and realistic skin fidelity.</p>
+              <button class="btn-inspect" onclick="openPhotoModal(this)"><i class="fa-solid fa-expand"></i> Inspect Look</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 5 -->
+        <div class="gallery-card" data-category="tech">
+          <div class="card-media">
+            <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=800&q=80" alt="Shreya Office Walk" loading="lazy">
+            <div class="overlay-glass">
+              <span class="cat-badge">Workspace</span>
+              <h4>Executive Suite Sprint</h4>
+              <p>Product roadmaps & sprint planning sessions.</p>
+              <button class="btn-inspect" onclick="openPhotoModal(this)"><i class="fa-solid fa-expand"></i> Inspect Look</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 6 -->
+        <div class="gallery-card" data-category="fashion">
+          <div class="card-media">
+            <img src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?auto=format&fit=crop&w=800&q=80" alt="Shreya Urban Look" loading="lazy">
+            <div class="overlay-glass">
+              <span class="cat-badge">Fashion Drop</span>
+              <h4>Minimalist Winter Layering</h4>
+              <p>Curated capsule collection concept.</p>
+              <button class="btn-inspect" onclick="openPhotoModal(this)"><i class="fa-solid fa-expand"></i> Inspect Look</button>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Brand Collaboration Services -->
-  <section class="section collabs-section" id="brand-collabs">
+  <!-- Brand Collaboration Packages (Pricing / Engagement) -->
+  <section class="section pricing-section" id="collaborate">
     <div class="container">
-      <div class="section-header text-center">
-        <span class="section-tag">Partnerships</span>
-        <h2>How Brands Collaborate With Tara</h2>
-        <p>High-converting, hyper-engaging digital media tailored for modern D2C & Tech brands.</p>
+      <div class="section-badge-center">
+        <span class="section-tag"><i class="fa-solid fa-handshake"></i> Commercial Models</span>
+        <h2 class="section-title">Transparent Brand Partnerships</h2>
+        <p class="section-subtitle">No agency bloat, no diva delays. Pick a streamlined commercial tier or request custom campaign specs.</p>
       </div>
 
       <div class="pricing-grid">
-        <!-- Tier 1 -->
-        <div class="pricing-card">
-          <div class="card-tier">Starter</div>
-          <h3>Sponsored Post & Story</h3>
-          <p class="price-desc">Perfect for brand awareness, product unboxing, and styling placement.</p>
-          <div class="price">Custom <span>/ campaign</span></div>
-          <ul class="features-list">
-            <li><i class="fa-solid fa-check"></i> 1x Photorealistic In-Feed Post</li>
-            <li><i class="fa-solid fa-check"></i> 3x High-Engagement Stories with Link</li>
-            <li><i class="fa-solid fa-check"></i> High-Res 4K Visual Assets</li>
-            <li><i class="fa-solid fa-check"></i> Full Commercial Digital Usage Rights</li>
-          </ul>
-          <a href="#contact" class="btn-tier">Inquire Now</a>
+        
+        <!-- Package 1 -->
+        <div class="tier-card">
+          <div class="tier-header">
+            <span class="tier-tag">Awareness</span>
+            <h3>Sponsored In-Feed</h3>
+            <p class="tier-summary">Ideal for product launches, brand styling features, and targeted visual integration.</p>
+          </div>
+          <div class="tier-price">
+            <span class="currency">Custom</span>
+            <span class="period">/ campaign</span>
+          </div>
+          <div class="tier-body">
+            <ul class="check-list">
+              <li><i class="fa-solid fa-circle-check"></i> <strong>1x High-Resolution 4K Post</strong> (Feed)</li>
+              <li><i class="fa-solid fa-circle-check"></i> <strong>3x Interactive Stories</strong> with link stickers</li>
+              <li><i class="fa-solid fa-circle-check"></i> Brand tagging & collaborative invite</li>
+              <li><i class="fa-solid fa-circle-check"></i> Standard digital commercial usage (30 days)</li>
+              <li><i class="fa-solid fa-circle-check"></i> Full audience demographic performance report</li>
+            </ul>
+          </div>
+          <div class="tier-footer">
+            <a href="#contact" class="btn-tier-outline" onclick="selectTier('Sponsored In-Feed')">Select Package</a>
+          </div>
         </div>
 
-        <!-- Tier 2 (Featured) -->
-        <div class="pricing-card featured">
-          <div class="badge-featured">Most Popular</div>
-          <div class="card-tier">Performance</div>
-          <h3>Synthetic UGC Ad Pack</h3>
-          <p class="price-desc">High-performing video ad creative package for Meta/Instagram Ad campaigns.</p>
-          <div class="price">5x Assets <span>/ bundle</span></div>
-          <ul class="features-list">
-            <li><i class="fa-solid fa-check"></i> 5x Motion / Talking Video Hooks (Reels)</li>
-            <li><i class="fa-solid fa-check"></i> Natural Indian Accent / Hinglish Voiceover</li>
-            <li><i class="fa-solid fa-check"></i> A/B Script Variations for High CTR</li>
-            <li><i class="fa-solid fa-check"></i> 90-Day Whitelisted Ad Run Rights</li>
-            <li><i class="fa-solid fa-check"></i> 48-Hour Turnaround Time</li>
-          </ul>
-          <a href="#contact" class="btn-tier btn-tier-featured">Book Ad Package</a>
+        <!-- Package 2 (Featured) -->
+        <div class="tier-card featured-tier">
+          <div class="featured-banner"><i class="fa-solid fa-fire"></i> Highest Converting</div>
+          <div class="tier-header">
+            <span class="tier-tag">Performance Ads</span>
+            <h3>Synthetic UGC Ad Pack</h3>
+            <p class="tier-summary">Pre-optimized short-form video ads (Reels) designed to drive maximum ROAS on Meta ads.</p>
+          </div>
+          <div class="tier-price">
+            <span class="currency">5x Videos</span>
+            <span class="period">/ asset bundle</span>
+          </div>
+          <div class="tier-body">
+            <ul class="check-list">
+              <li><i class="fa-solid fa-circle-check"></i> <strong>5x High-Retention Video Hooks (Reels)</strong></li>
+              <li><i class="fa-solid fa-circle-check"></i> Natural Indian English / Hinglish voiceover</li>
+              <li><i class="fa-solid fa-circle-check"></i> Lip-synced talking head & dynamic B-roll</li>
+              <li><i class="fa-solid fa-circle-check"></i> <strong>90-Day Whitelisted Paid Ad Usage Rights</strong></li>
+              <li><i class="fa-solid fa-circle-check"></i> A/B script hooks for high click-through rate</li>
+              <li><i class="fa-solid fa-circle-check"></i> <strong>Turnaround: 48 Hours</strong></li>
+            </ul>
+          </div>
+          <div class="tier-footer">
+            <a href="#contact" class="btn-tier-gradient" onclick="selectTier('Synthetic UGC Ad Pack')">
+              <span>Book UGC Bundle</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
         </div>
 
-        <!-- Tier 3 -->
-        <div class="pricing-card">
-          <div class="card-tier">Enterprise</div>
-          <h3>Brand Ambassador</h3>
-          <p class="price-desc">Exclusive quarterly partnership as the official virtual face of your brand.</p>
-          <div class="price">Quarterly <span>Retainer</span></div>
-          <ul class="features-list">
-            <li><i class="fa-solid fa-check"></i> Category Exclusivity</li>
-            <li><i class="fa-solid fa-check"></i> 4x In-Feed Posts & 2x Video Reels Monthly</li>
-            <li><i class="fa-solid fa-check"></i> Website / Billboard High-Res Assets</li>
-            <li><i class="fa-solid fa-check"></i> Dedicated PR & Launch Announcements</li>
-          </ul>
-          <a href="#contact" class="btn-tier">Schedule Call</a>
+        <!-- Package 3 -->
+        <div class="tier-card">
+          <div class="tier-header">
+            <span class="tier-tag">Long-Term IP</span>
+            <h3>Brand Ambassador</h3>
+            <p class="tier-summary">Exclusive category ambassadorship positioning Shreya as your official virtual face.</p>
+          </div>
+          <div class="tier-price">
+            <span class="currency">Quarterly</span>
+            <span class="period">Retainer</span>
+          </div>
+          <div class="tier-body">
+            <ul class="check-list">
+              <li><i class="fa-solid fa-circle-check"></i> <strong>Category Exclusivity</strong> (No direct competitors)</li>
+              <li><i class="fa-solid fa-circle-check"></i> 4x Feed Posts & 2x Motion Reels Monthly</li>
+              <li><i class="fa-solid fa-circle-check"></i> Website hero banner & outdoor digital rights</li>
+              <li><i class="fa-solid fa-circle-check"></i> Custom seasonal lookbook integration</li>
+              <li><i class="fa-solid fa-circle-check"></i> Priority direct Slack/WhatsApp channel</li>
+            </ul>
+          </div>
+          <div class="tier-footer">
+            <a href="#contact" class="btn-tier-outline" onclick="selectTier('Brand Ambassador Retainer')">Schedule Briefing</a>
+          </div>
         </div>
+
       </div>
     </div>
   </section>
 
-  <!-- Media Kit & Metrics -->
-  <section class="section metrics-section" id="press">
+  <!-- Interactive ROAS / Comparison Calculator -->
+  <section class="section comparison-section" id="case-studies">
     <div class="container">
-      <div class="metrics-box">
-        <div class="metrics-text">
-          <span class="section-tag">Media Kit 2026</span>
-          <h2>The Numbers That Drive Results</h2>
-          <p>Virtual influencers command <strong>3x higher engagement</strong> than traditional creators due to novelty, visual perfection, and audience curiosity.</p>
-          <div class="audience-stats">
-            <div class="aud-stat">
-              <h4>18–34 yrs</h4>
-              <p>Primary Demographic (Metro India)</p>
-            </div>
-            <div class="aud-stat">
-              <h4>68%</h4>
-              <p>Delhi-NCR, Bengaluru, Mumbai</p>
-            </div>
-            <div class="aud-stat">
-              <h4>Tech & Lifestyle</h4>
-              <p>Top Audience Affinity</p>
-            </div>
+      <div class="section-badge-center">
+        <span class="section-tag"><i class="fa-solid fa-chart-pie"></i> Cost & Efficiency</span>
+        <h2 class="section-title">Traditional Creators vs. Shreya Roy</h2>
+        <p class="section-subtitle">Why leading global brands are reallocating up to 30% of influencer budgets to virtual talent.</p>
+      </div>
+
+      <div class="comparison-table-wrapper">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th>Evaluation Metric</th>
+              <th class="col-traditional">Traditional Human Influencer</th>
+              <th class="col-shreya">✨ Shreya Roy (Virtual Creator)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Turnaround Speed</strong></td>
+              <td>10 – 21 Days (Scheduling, travel, edits)</td>
+              <td class="winner-cell"><i class="fa-solid fa-check"></i> <strong>24 – 48 Hours</strong></td>
+            </tr>
+            <tr>
+              <td><strong>PR & Brand Safety</strong></td>
+              <td>Unpredictable personal life / controversies</td>
+              <td class="winner-cell"><i class="fa-solid fa-check"></i> <strong>100% Brand Safe & Guardrailed</strong></td>
+            </tr>
+            <tr>
+              <td><strong>Location Versatility</strong></td>
+              <td>Requires costly flights, stays & crews</td>
+              <td class="winner-cell"><i class="fa-solid fa-check"></i> <strong>Any Location on Earth Instantly</strong></td>
+            </tr>
+            <tr>
+              <td><strong>Engagement Rates</strong></td>
+              <td>Industry avg (1.2% – 2.4%)</td>
+              <td class="winner-cell"><i class="fa-solid fa-check"></i> <strong>3x Higher (Novelty & Visual Immersion)</strong></td>
+            </tr>
+            <tr>
+              <td><strong>Creative Revisions</strong></td>
+              <td>Expensive re-shoots ($$$)</td>
+              <td class="winner-cell"><i class="fa-solid fa-check"></i> <strong>Instant neural re-rendering</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Accordion -->
+  <section class="section faq-section" id="faq">
+    <div class="container faq-layout">
+      <div class="faq-intro">
+        <span class="section-tag"><i class="fa-solid fa-circle-question"></i> Clear Answers</span>
+        <h2>Frequently Asked Questions</h2>
+        <p>Everything you need to know about working with an AI-native creator, usage rights, and commercial delivery.</p>
+        <div class="help-box">
+          <h4>Have a custom technical inquiry?</h4>
+          <p>Reach out directly to our management team:</p>
+          <a href="mailto:mail@abhishekkumarproduct.co.in" class="email-link">
+            <i class="fa-solid fa-envelope"></i> mail@abhishekkumarproduct.co.in
+          </a>
+        </div>
+      </div>
+
+      <div class="faq-accordion" id="accordion">
+        <div class="faq-item active">
+          <button class="faq-question">
+            <span>Is Shreya Roy transparently disclosed as an AI creator?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Yes, absolutely. We strictly adhere to ASCI (Advertising Standards Council of India) and global Meta/Instagram synthetic media guidelines. All collaborations feature transparent digital creator badges, ensuring audience trust and ethical brand alignment.</p>
           </div>
         </div>
-        <div class="metrics-cta">
-          <div class="cta-inner">
-            <i class="fa-solid fa-file-pdf cta-icon"></i>
-            <h3>Download Official Media Kit</h3>
-            <p>Get full demographic data, past lookbook samples, and rate card.</p>
-            <a href="#contact" class="btn-primary">Request Rate Card</a>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Can Shreya be generated holding our physical product?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Yes. Using our proprietary face and asset conditioning pipelines, brands can send high-resolution 3D models or product photography. We integrate physical merchandise (apparel, packaging, cosmetics, smartphones) seamlessly into Shreya's hands or styling.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Can Shreya speak in videos with natural Indian English or Hindi?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Yes. Our motion Reels package uses advanced neural audio cloning tuned for authentic Indian English and urban Hinglish accents, complete with natural pacing, sub-second lip synchronization, and micro-expressions.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>What are the commercial usage rights included?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Standard packages include organic digital usage across brand social channels. For paid performance ads (Meta/Google), our Synthetic UGC bundles come with 90-day whitelisting rights included. Perpetual or billboard rights are available on request.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Contact / Booking Section -->
+  <!-- Contact & Collaboration Form -->
   <section class="section contact-section" id="contact">
     <div class="container">
-      <div class="contact-wrapper">
-        <div class="contact-info">
-          <span class="section-tag">Get in Touch</span>
-          <h2>Let's Create Something Iconic.</h2>
-          <p>For brand collaborations, agency partnerships, synthetic UGC ad creation, or press inquiries, drop a line below.</p>
-          <div class="contact-details">
-            <div class="c-item">
-              <i class="fa-solid fa-envelope"></i>
-              <span>collab@tararoy.ai</span>
+      <div class="contact-box-grid">
+        
+        <!-- Contact Meta -->
+        <div class="contact-details-panel">
+          <span class="section-tag"><i class="fa-solid fa-headset"></i> Get In Touch</span>
+          <h2>Let's Engineer Your Next Viral Campaign.</h2>
+          <p>Whether you're looking for high-retention Meta ad creatives or an ongoing brand ambassador, our team is ready to respond within 24 hours.</p>
+
+          <div class="contact-items-list">
+            <a href="mailto:mail@abhishekkumarproduct.co.in" class="contact-card-link">
+              <div class="c-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div>
+                <h5>Official Partnerships Email</h5>
+                <span>mail@abhishekkumarproduct.co.in</span>
+              </div>
+            </a>
+
+            <div class="contact-card-link">
+              <div class="c-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div>
+                <h5>Operational Studio Location</h5>
+                <span>Cyber City, Sector 24, Gurgaon, Haryana 122002</span>
+              </div>
             </div>
-            <div class="c-item">
-              <i class="fa-solid fa-location-dot"></i>
-              <span>Cyber City, Sector 24, Gurgaon, Haryana 122002</span>
-            </div>
-            <div class="c-item">
-              <i class="fa-brands fa-instagram"></i>
-              <span>@tara.roy.ai (Official Instagram)</span>
+
+            <div class="contact-card-link">
+              <div class="c-icon"><i class="fa-solid fa-clock"></i></div>
+              <div>
+                <h5>Response SLA</h5>
+                <span>Under 12 hours on business days</span>
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="contact-form-container">
-          <form class="contact-form" id="collabForm" onsubmit="event.preventDefault(); alert('Inquiry received! We will connect within 24 hours.');">
-            <div class="form-group">
-              <label for="brandName">Brand / Company Name</label>
-              <input type="text" id="brandName" placeholder="e.g. Snitch, Nothing India, Cult.fit" required>
+        <!-- Contact Form -->
+        <div class="contact-form-panel">
+          <form class="styled-form" id="partnershipForm" onsubmit="handleFormSubmit(event)">
+            <h3 class="form-title">Submit Partnership Brief</h3>
+            
+            <div class="form-row">
+              <div class="input-block">
+                <label for="companyName">Brand / Company Name *</label>
+                <input type="text" id="companyName" placeholder="e.g. Snitch, Nothing India, Cult" required>
+              </div>
+              <div class="input-block">
+                <label for="workEmail">Work Email Address *</label>
+                <input type="email" id="workEmail" placeholder="partner@yourbrand.com" required>
+              </div>
             </div>
-            <div class="form-group">
-              <label for="contactEmail">Work Email</label>
-              <input type="email" id="contactEmail" placeholder="you@company.com" required>
+
+            <div class="form-row">
+              <div class="input-block">
+                <label for="campaignType">Collaboration Objective *</label>
+                <select id="campaignType" required>
+                  <option value="" disabled selected>Select an option</option>
+                  <option value="ugc">Synthetic UGC Ad Bundle (5-10 Reels)</option>
+                  <option value="sponsored">Sponsored In-Feed & Stories</option>
+                  <option value="ambassador">Quarterly Brand Ambassador Retainer</option>
+                  <option value="media">Press, Interviews & Speaking</option>
+                  <option value="custom">Custom Commercial Concept</option>
+                </select>
+              </div>
+              <div class="input-block">
+                <label for="campaignBudget">Estimated Campaign Budget (INR)</label>
+                <select id="campaignBudget">
+                  <option value="tier1">₹25,000 – ₹50,000</option>
+                  <option value="tier2" selected>₹50,000 – ₹1,50,000</option>
+                  <option value="tier3">₹1,50,000 – ₹5,00,000</option>
+                  <option value="tier4">₹5,00,000+</option>
+                </select>
+              </div>
             </div>
-            <div class="form-group">
-              <label for="collabType">Collaboration Type</label>
-              <select id="collabType" required>
-                <option value="" disabled selected>Select an option</option>
-                <option value="sponsored">Sponsored Instagram Content</option>
-                <option value="ugc">Synthetic UGC Ad Bundle (5-10 videos)</option>
-                <option value="ambassador">Brand Ambassadorship Retainer</option>
-                <option value="press">Press & Media Feature</option>
-                <option value="other">Other Inquiry</option>
-              </select>
+
+            <div class="input-block">
+              <label for="campaignBrief">Campaign Goals & Timeline *</label>
+              <textarea id="campaignBrief" rows="4" placeholder="Describe the product, target launch date, and deliverable preferences..." required></textarea>
             </div>
-            <div class="form-group">
-              <label for="message">Campaign Overview / Brief</label>
-              <textarea id="message" rows="4" placeholder="Tell us about your brand and what you have in mind..." required></textarea>
-            </div>
-            <button type="submit" class="btn-primary btn-block">Send Partnership Brief</button>
+
+            <button type="submit" class="btn-submit" id="submitBtn">
+              <span>Send Campaign Brief</span>
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
+
+            <div class="form-notice" id="formStatusNotice"></div>
           </form>
         </div>
+
       </div>
     </div>
   </section>
 
+  <!-- Inspect Photo Modal (Clickable Detail View) -->
+  <div class="modal-backdrop" id="photoModal">
+    <div class="modal-dialog">
+      <button class="modal-close-btn" onclick="closePhotoModal()"><i class="fa-solid fa-xmark"></i></button>
+      <div class="modal-media-wrap">
+        <img src="" alt="Lookbook High-Res Preview" id="modalImg">
+      </div>
+      <div class="modal-caption-wrap">
+        <span class="modal-tag" id="modalTag">Category</span>
+        <h3 id="modalTitle">Title</h3>
+        <p id="modalDesc">Description</p>
+        <div class="modal-meta-row">
+          <span><i class="fa-solid fa-camera"></i> 35mm f/1.8</span>
+          <span><i class="fa-solid fa-city"></i> Gurgaon, DLF Phase 5</span>
+          <span><i class="fa-solid fa-palette"></i> Cyber-Minimal Palette</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Footer -->
-  <footer class="footer">
-    <div class="container footer-content">
-      <div class="footer-brand">
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col-main">
         <a href="#" class="brand-logo">
-          <span class="logo-dot"></span>
-          <span class="logo-text">TARA<span class="highlight">.AI</span></span>
+          <span class="logo-symbol"><i class="fa-solid fa-sparkles"></i></span>
+          <span class="logo-name">SHREYA<span class="accent-text">.AI</span></span>
         </a>
-        <p>India's premier digital human & virtual creator. Crafted with artificial intelligence, styled for real-world impact.</p>
+        <p class="footer-bio">
+          India's leading digital human & virtual creator. Built at the intersection of AI neural rendering and contemporary Indian urban culture.
+        </p>
+        <p class="official-email">
+          <i class="fa-solid fa-envelope"></i> 
+          <a href="mailto:mail@abhishekkumarproduct.co.in">mail@abhishekkumarproduct.co.in</a>
+        </p>
       </div>
-      <div class="footer-links">
+
+      <div class="footer-col-nav">
         <h4>Navigation</h4>
-        <a href="#about">About</a>
-        <a href="#portfolio">Lookbook</a>
-        <a href="#brand-collabs">Collaborations</a>
-        <a href="#contact">Contact</a>
+        <ul>
+          <li><a href="#about">About Identity</a></li>
+          <li><a href="#lookbook">Lookbook Gallery</a></li>
+          <li><a href="#collaborate">Commercial Rates</a></li>
+          <li><a href="#case-studies">Why Virtual AI</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
       </div>
-      <div class="footer-legal">
+
+      <div class="footer-col-legal">
         <h4>Ethics & AI Notice</h4>
-        <p>Tara Roy is a virtual persona created with synthetic media. All imagery is computer-generated. Committed to ethical AI and transparency in advertising.</p>
-        <p class="copyright">© 2026 Tara Roy Virtual IP. All rights reserved.</p>
+        <p class="ethics-text">
+          Shreya Roy is an AI-generated digital human persona. All imagery, video, and audio are synthetic media generated using artificial intelligence. We are dedicated to transparency, ethical advertising, and responsible AI IP stewardship.
+        </p>
+        <p class="copyright-notice">© 2026 Shreya Roy Virtual IP. All rights reserved.</p>
       </div>
     </div>
   </footer>
