@@ -147,18 +147,27 @@
       <div class="hero-right">
         <div class="portrait-card">
           <div class="portrait-image-wrap">
-            <img 
-              src="assets/shreya_hero.jpg" 
-              alt="Shreya - Modern Digital Persona" 
+            <video 
+              src="assets/shreya_reel.mp4" 
+              poster="assets/shreya_hero.jpg" 
+              autoplay 
+              muted 
+              loop 
+              playsinline 
               class="portrait-img"
-              id="heroPortrait"
-            >
+              id="heroVideo"
+            ></video>
             <div class="portrait-badge">
-              <span class="badge-text">IDENTITY #01</span>
+              <span class="live-dot" style="background:#22c55e; box-shadow:0 0 10px #22c55e;"></span>
+              <span class="badge-text">LIVE REEL</span>
             </div>
+            <button class="sound-toggle-btn" id="soundToggle" onclick="toggleHeroSound(event)">
+              <i class="fa-solid fa-volume-xmark" id="soundIcon"></i>
+              <span id="soundLabel">Tap for Voice</span>
+            </button>
             <div class="portrait-caption">
               <h5>Shreya • Virtual Influencer</h5>
-              <p>Contemporary Indian elegance & tech lifestyle</p>
+              <p>Live AI talking reel with synchronized speech</p>
             </div>
           </div>
         </div>

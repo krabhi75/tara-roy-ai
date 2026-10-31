@@ -91,3 +91,24 @@ function handleInquiry(e) {
   // Reset form
   document.getElementById('contactForm').reset();
 }
+
+// Hero Video Sound Toggle
+function toggleHeroSound(e) {
+  if (e) e.stopPropagation();
+  const video = document.getElementById('heroVideo');
+  const icon = document.getElementById('soundIcon');
+  const label = document.getElementById('soundLabel');
+  if (!video) return;
+
+  if (video.muted) {
+    video.muted = false;
+    video.currentTime = 0;
+    video.play();
+    if (icon) icon.className = 'fa-solid fa-volume-high';
+    if (label) label.textContent = 'Voice Playing';
+  } else {
+    video.muted = true;
+    if (icon) icon.className = 'fa-solid fa-volume-xmark';
+    if (label) label.textContent = 'Tap for Voice';
+  }
+}
